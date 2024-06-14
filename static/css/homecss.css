@@ -1,0 +1,178 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.carousel-item img {
+    height: 620px;
+}
+
+
+.background-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-80%);
+}
+
+.background-content h1 {
+    color: black;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 515;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.background-content p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.background-content a {
+    background: #16a085;
+    background: linear-gradient(0deg, rgba(22, 160, 133, 0.21621148459383754) 0%, rgba(255, 255, 255, 0.3842787114845938) 100%);
+    border: 2px solid rgb(112, 208, 186);
+    padding: 1.5rem 3rem;
+    border-radius: 15px;
+    color: rgb(7, 7, 7);
+    font-size: 1.5rem;
+    transition: .4s;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background-content a:hover {
+    background: transparent;
+    border: 2px solid #000000;
+    color: black;
+}
+
+
+
+/* self_diagnosis css starts here */
+#self_diagnosis_btn{
+    background: rgb(149,139,11);
+background: linear-gradient(7deg, rgba(149,139,11,0.4823179271708683) 0%, rgba(255,255,255,0.04254201680672265) 75%);
+border: 2px solid rgb(178, 178, 11);
+}
+#self_diagnosis_btn:hover{
+    background-color: white;
+    border: 2px solid black;
+}
+
+
+/* doctors section css stats here */
+.doctor_container {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,0.4739145658263305) 0%, rgba(22,160,133,0.510329131652661) 100%);
+}
+
+.doctor_about {
+    width: 50%;
+    padding: 10px 20px;
+    margin-top: 100px;
+    margin-right: 50px;
+}
+
+.doctor_about p {
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.doctor_about a {
+    background: #1fdfb9;
+    background: linear-gradient(0deg, rgba(22, 160, 133, 0.21621148459383754) 0%, rgba(255, 255, 255, 0.3842787114845938) 100%);
+    border: 2px solid rgb(73, 173, 150);
+    color: black;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-left: 65%;
+}
+
+.doctor_about a:hover {
+    border-radius: 8px;
+    border: 2px solid #16a085;
+    padding: 10px 15px;
+    background-color: rgb(221, 255, 245);
+}
+
+.doctor_image {
+    margin: 45px;
+    width: 35%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.doctor_image img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+/* medicine and self_diagnosis div css starts here */
+.medicine_container {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    background: rgb(84,211,255);
+background: linear-gradient(90deg, rgba(84,211,255,0.5383403361344538) 6%, rgba(255,255,255,0.510329131652661) 100%);
+    margin-top: 7px;
+}
+
+.medicine_about {
+    width: 50%;
+    padding: 10px 20px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.medicine_about p {
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.medicine_about a {
+    border: 1px solid rgb(30, 135, 156);
+    background: rgb(31, 117, 146);
+background: linear-gradient(0deg, rgba(37, 172, 218, 0.474) 3%, rgba(255,255,255,0.510329131652661) 100%);
+    color: black;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 7px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.medicine_about a:hover {
+    border-radius: 7px;
+    border: 2px solid #8db1ff;
+    padding: 7px 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.medicine_image {
+    margin: 45px;
+    width: 35%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.medicine_image img {
+    width: 100%;
+    border-radius: 4px;
+}

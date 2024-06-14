@@ -1,0 +1,1279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+  <style>
+            .banner-background{
+                  height: 200px;
+                 }
+                 .background-primary{
+                 background-color:#84ffff;
+                 }
+        </style>
+</head>
+  
+<body>
+
+<!-- navbar start here -->
+    <nav class="navbar navbar-expand-lg navbar-light background-primary">
+
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li><img src="static/image/doctorlogo.png" alt="" height="50px" width="100px"></li>
+      <li class="nav-item active">
+        <a class="nav-link " href="/home">Home</a>
+      </li>
+      
+
+    </ul>
+
+  </div>
+</nav>
+<div class="divider py-1 bg-white"></div>
+
+<!-- navbar end here -->
+
+
+<div class="container-fluid  background-primary">
+
+            <div class="jumbotron banner-background">
+
+                <div class="container text-center">
+                    <h3 class="display-3 pt-5">Welcome to Health Checkup</h3>
+                    <p class="lead">Please check the symptoms box and test yourself</p>
+
+                </div>
+            </div>
+</div>
+<div class="container text-center"><h1>{{abc}}</h1></div>
+  <!-- test start here-->
+  <div class="container mt-5">
+    <form action="/test11" method="post">
+      <div class="form-group">
+        <div class="row mt-3">
+
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="tching" type="checkbox" value="1" id="id1">
+              <label class="form-check-label" for="id1">
+                itching
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="skin_rash" type="checkbox" value="1" id="id2">
+              <label class="form-check-label" for="id2">
+                skin_rash
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="nodal_skin_eruptions" type="checkbox" value="1" id="id3">
+              <label class="form-check-label" for="id3">
+                nodal_skin_eruptions
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="continuous_sneezing" type="checkbox" value="1" id="id4">
+              <label class="form-check-label" for="id4">
+                continuous_sneezing
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="shivering" type="checkbox" value="1" id="id5">
+              <label class="form-check-label" for="id5">
+                shivering
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="chills" type="checkbox" value="1" id="id6">
+              <label class="form-check-label" for="id6">
+                chills
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- first row end here-->
+
+        <!--Second row start here-->
+        <div class="row mt-3">
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="joint_pain" type="checkbox" value="1" id="id7">
+              <label class="form-check-label" for="id7">
+                joint_pain
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="stomach_pain" type="checkbox" value="1" id="id8">
+              <label class="form-check-label" for="id8">
+                stomach_pain
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="acidity" type="checkbox" value="1" id="id9">
+              <label class="form-check-label" for="id9">
+                acidity
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="ulcers_on_tongue" type="checkbox" value="1" id="id10">
+              <label class="form-check-label" for="id10">
+                tongue_ulcers
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="muscle_wasting" type="checkbox" value="1" id="id11">
+              <label class="form-check-label" for="id11">
+                muscle_wasting
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="vomiting" type="checkbox" value="1" id="id12">
+              <label class="form-check-label" for="id12">
+                vomiting
+              </label>
+            </div>
+          </div>
+        </div>
+        <!--Second row end here-->
+
+        <!--Third row start here-->
+        <div class="row mt-3">
+
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="burning_micturition" type="checkbox" value="1" id="id13">
+              <label class="form-check-label" for="id13">
+                burning_micturition
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="spotting_urination" type="checkbox" value="1" id="id14">
+              <label class="form-check-label" for="id14">
+                spotting_urination
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="fatigue" type="checkbox" value="1" id="id15">
+              <label class="form-check-label" for="id15">
+                fatigue
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="weight_gain" type="checkbox" value="1" id="id16">
+              <label class="form-check-label" for="id16">
+                weight_gain
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="anxiety" type="checkbox" value="1" id="id17">
+              <label class="form-check-label" for="id17">
+                anxiety
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="cold_hands_and_feets" type="checkbox" value="1" id="id18">
+              <label class="form-check-label" for="id18">
+                cold hands/feets
+              </label>
+            </div>
+          </div>
+        </div>
+        <!--Third row end here-->
+
+        <!--Forth row start here-->
+        <div class="row mt-3">
+
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="mood_swings" type="checkbox" value="1" id="id19">
+              <label class="form-check-label" for="id19">
+                mood_swings
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="weight_loss" type="checkbox" value="1" id="id20">
+              <label class="form-check-label" for="id20">
+                weight_loss
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="restlessness" type="checkbox" value="1" id="id21">
+              <label class="form-check-label" for="id21">
+                restlessness
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="lethargy" type="checkbox" value="1" id="id22">
+              <label class="form-check-label" for="id22">
+                lethargy
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" type="checkbox" value="1" id="id23">
+              <label class="form-check-label" for="id23">
+                throat pathches
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="irregular_sugar_level" type="checkbox" value="1" id="id24">
+              <label class="form-check-label" for="id24">
+                irregular_sugar_level
+              </label>
+            </div>
+          </div>
+        </div>
+        <!--Forth row end here-->
+
+        <!--Fifth row start here-->
+        <div class="row mt-3">
+
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="cough" type="checkbox" value="1" id="id25">
+              <label class="form-check-label" for="id25">
+                cough
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="high_fever" type="checkbox" value="1" id="id26">
+              <label class="form-check-label" for="id26">
+                high_fever
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" type="checkbox" value="1" id="id27">
+              <label class="form-check-label" for="id27">
+                sunken_eyes
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="breathlessness" type="checkbox" value="1" id="id28">
+              <label class="form-check-label" for="id28">
+                breathlessness
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="sweating" type="checkbox" value="1" id="id29">
+              <label class="form-check-label" for="id29">
+                sweating
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="dehydration" type="checkbox" value="1" id="id30">
+              <label class="form-check-label" for="id30">
+                dehydration
+              </label>
+            </div>
+          </div>
+        </div>
+        <!--Fifth row end here-->
+
+        <!--Sixth row start here-->
+        <div class="row mt-3">
+
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="indigestion" type="checkbox" value="1" id="id31">
+              <label class="form-check-label" for="id31">
+                indigestion
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="headache" type="checkbox" value="1" id="id32">
+              <label class="form-check-label" for="id32">
+                headache
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="yellowish_skin" type="checkbox" value="1" id="id33">
+              <label class="form-check-label" for="id33">
+                yellow_skin
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="dark_urine" type="checkbox" value="1" id="id34">
+              <label class="form-check-label" for="id34">
+                dark_urine
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="nausea" type="checkbox" value="1" id="id35">
+              <label class="form-check-label" for="id35">
+                nausea
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="loss_of_appetite" type="checkbox" value="1" id="id36">
+              <label class="form-check-label" for="id36">
+                loss_of_appetite
+              </label>
+            </div>
+          </div>
+        </div>
+        <!--Sixth row end here-->
+
+        <!--Seventh row start here-->
+        <div class="row mt-3">
+
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="pain_behind_the_eyes" type="checkbox" value="1" id="id37">
+              <label class="form-check-label" for="id37">
+                behind eyes pain
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="back_pain" type="checkbox" value="1" id="id38">
+              <label class="form-check-label" for="id38">
+                back_pain
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="constipation" type="checkbox" value="1" id="id39">
+              <label class="form-check-label" for="id39">
+                constipation
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="abdominal_pain" type="checkbox" value="1" id="id40">
+              <label class="form-check-label" for="id40">
+                abdominal_pain
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="diarrhoea" type="checkbox" value="1" id="id41">
+              <label class="form-check-label" for="id41">
+                diarrhoea
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="mild_fever" type="checkbox" value="1" id="id42">
+              <label class="form-check-label" for="id42">
+                mild_fever
+              </label>
+            </div>
+          </div>
+        </div>
+        <!--Seventh row end here-->
+
+        <!--Eighth row start here-->
+        <div class="row mt-3">
+
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="yellow_urine" type="checkbox" value="1" id="id43">
+              <label class="form-check-label" for="id43">
+                yellow_urine
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="yellowing_of_eyes" type="checkbox" value="1" id="id44">
+              <label class="form-check-label" for="id44">
+                yellow eyes
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="acute_liver_failure" type="checkbox" value="1" id="id45">
+              <label class="form-check-label" for="id45">
+                acute_liver_failure
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="fluid_overload" type="checkbox" value="1" id="id46">
+              <label class="form-check-label" for="id46">
+                fluid_overload
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="swelling_of_stomach" type="checkbox" value="1" id="id47">
+              <label class="form-check-label" for="id47">
+                swelling_of_stomach
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="swelled_lymph_nodes" type="checkbox" value="1" id="id48">
+              <label class="form-check-label" for="id48">
+                swelled_lymph_nodes
+              </label>
+            </div>
+          </div>
+        </div>
+        <!--Eighth row end here-->
+
+        <!--Nineth row start here-->
+        <div class="row mt-3">
+
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="malaise" type="checkbox" value="1" id="id49">
+              <label class="form-check-label" for="id49">
+                malaise
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="blurred_and_distorted_vision" type="checkbox" value="1" id="id50">
+              <label class="form-check-label" for="id50">
+                blurred vision
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="phlegm" type="checkbox" value="1" id="id51">
+              <label class="form-check-label" for="id51">
+                phlegm
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="throat_irritation" type="checkbox" value="1" id="id52">
+              <label class="form-check-label" for="id52">
+                throat_irritation
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="redness_of_eyes" type="checkbox" value="1" id="id53">
+              <label class="form-check-label" for="id53">
+                redness_of_eyes
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="sinus_pressure" type="checkbox" value="1" id="id54">
+              <label class="form-check-label" for="id54">
+                sinus_pressure
+              </label>
+            </div>
+          </div>
+        </div>
+        <!--Nineth row end here-->
+
+        <!--Tenth row start here-->
+        <div class="row mt-3">
+
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="runny_nose" type="checkbox" value="1" id="id55">
+              <label class="form-check-label" for="id55">
+                runny_nose
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="congestion" type="checkbox" value="1" id="id56">
+              <label class="form-check-label" for="id56">
+                congestion
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="chest_pain" type="checkbox" value="1" id="id57">
+              <label class="form-check-label" for="id57">
+                chest_pain
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="weakness_in_limbs" type="checkbox" value="1" id="id58">
+              <label class="form-check-label" for="id58">
+                weakness_in_limbs
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="fast_heart_rate" type="checkbox" value="1" id="id59">
+              <label class="form-check-label" for="id59">
+                fast_heart_rate
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="pain_during_bowels_movement" type="checkbox" value="1" id="id60">
+              <label class="form-check-label" for="id60">
+                pain_during_bowels_movement
+              </label>
+            </div>
+          </div>
+        </div>
+        <!--Tenth row end here-->
+
+        <!-- 11 row start here-->
+        <div class="row mt-3">
+
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="pain_in_anal_region" type="checkbox" value="1" id="id61">
+              <label class="form-check-label" for="id61">
+                pain_in_anal_region
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="bloody_stool" type="checkbox" value="1" id="id62">
+              <label class="form-check-label" for="id62">
+                bloody_stool
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="irritation_in_anus" type="checkbox" value="1" id="id63">
+              <label class="form-check-label" for="id63">
+                irritation_in_anus
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="neck_pain" type="checkbox" value="1" id="id64">
+              <label class="form-check-label" for="id64">
+                neck_pain
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="dizziness" type="checkbox" value="1" id="id65">
+              <label class="form-check-label" for="id65">
+                dizziness
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="cramps" type="checkbox" value="1" id="id66">
+              <label class="form-check-label" for="id66">
+                cramps
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- 11 row end here-->
+
+        <!-- 12 row start here-->
+        <div class="row mt-3">
+
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="bruising" type="checkbox" value="1" id="id67">
+              <label class="form-check-label" for="id67">
+                bruising
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="obesity" type="checkbox" value="1" id="id68">
+              <label class="form-check-label" for="id68">
+                obesity
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="swollen_legs" type="checkbox" value="1" id="id69">
+              <label class="form-check-label" for="id69">
+                swollen_legs
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="swollen_blood_vessels" type="checkbox" value="1" id="id70">
+              <label class="form-check-label" for="id70">
+                swollen_blood_vessels
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="puffy_face_and_eyes" type="checkbox" value="1" id="id71">
+              <label class="form-check-label" for="id71">
+                puffy_face_and_eyes
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="enlarged_thyroid" type="checkbox" value="1" id="id72">
+              <label class="form-check-label" for="id72">
+                enlarged_thyroid
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- 12 row end here-->
+
+        <!-- 13 row start here-->
+        <div class="row mt-3">
+
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="brittle_nails" type="checkbox" value="1" id="id73">
+              <label class="form-check-label" for="id73">
+                brittle_nails
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="swollen_extremeties" type="checkbox" value="1" id="id74">
+              <label class="form-check-label" for="id74">
+                swollen_extremeties
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="excessive_hunger" type="checkbox" value="1" id="id75">
+              <label class="form-check-label" for="id75">
+                excessive_hunger
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="extra_marital_contacts" type="checkbox" value="1" id="id76">
+              <label class="form-check-label" for="id76">
+                extra_marital_contacts
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="drying_and_tingling_lips" type="checkbox" value="1" id="id77">
+              <label class="form-check-label" for="id77">
+                drying_and_tingling_lips
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="slurred_speech" type="checkbox" value="1" id="id78">
+              <label class="form-check-label" for="id78">
+                slurred_speech
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- 13 row end here-->
+
+        <!-- 14row start here-->
+        <div class="row mt-3">
+
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="knee_pain" type="checkbox" value="1" id="id79">
+              <label class="form-check-label" for="id79">
+                knee_pain
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="hip_joint_pain" type="checkbox" value="1" id="id80">
+              <label class="form-check-label" for="id80">
+                hip_joint_pain
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="muscle_weakness" type="checkbox" value="1" id="id81">
+              <label class="form-check-label" for="id81">
+                muscle_weakness
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="stiff_neck" type="checkbox" value="1" id="id82">
+              <label class="form-check-label" for="id82">
+                stiff_neck
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="swelling_joints" type="checkbox" value="1" id="id83">
+              <label class="form-check-label" for="id83">
+                swelling_joints
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="movement_stiffness" type="checkbox" value="1" id="id84">
+              <label class="form-check-label" for="id84">
+                movement_stiffness
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- 14row end here-->
+
+        <!--15 row start here-->
+        <div class="row mt-3">
+
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="spinning_movements" type="checkbox" value="1" id="id85">
+              <label class="form-check-label" for="id85">
+                spinning_movements
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="loss_of_balance" type="checkbox" value="1" id="id86">
+              <label class="form-check-label" for="id86">
+                loss_of_balance
+              </label>
+            </div>
+          </div>
+
+<!-- change in id required from below this not id 134 this is id 87 -->
+
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="unsteadiness" type="checkbox" value="1" id="id134">
+              <label class="form-check-label" for="id134">
+                unsteadiness
+              </label>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="weakness_of_one_body_side" type="checkbox" value="1" id="id87">
+              <label class="form-check-label" for="id87">
+                weak_body_side
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="loss_of_smell" type="checkbox" value="1" id="id88">
+              <label class="form-check-label" for="id88">
+                loss_of_smell
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="bladder_discomfort" type="checkbox" value="1" id="id89">
+              <label class="form-check-label" for="id89">
+                bladder_discomfort
+              </label>
+            </div>
+          </div>
+
+        </div>
+        <!--15 row end here-->
+
+        <!--16 row start here-->
+        <div class="row mt-3">
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="foul_smell_of urine" type="checkbox" value="1" id="id90">
+              <label class="form-check-label" for="id90">
+                foul_smell_of urine
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="continuous_feel_of_urine" type="checkbox" value="1" id="id91">
+              <label class="form-check-label" for="id91">
+                continuous_feel_of_urine
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="passage_of_gases" type="checkbox" value="1" id="id92">
+              <label class="form-check-label" for="id92">
+                passage_of_gases
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="internal_itching" type="checkbox" value="1" id="id93">
+              <label class="form-check-label" for="id93">
+                internal_itching
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="toxic_look" type="checkbox" value="1" id="id94">
+              <label class="form-check-label" for="id94">
+                toxic_look_(typhos)
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="depression" type="checkbox" value="1" id="id95">
+              <label class="form-check-label" for="id95">
+                depression
+              </label>
+            </div>
+          </div>
+
+        </div>
+        <!--16 row end here-->
+
+        <!--17 row start here-->
+        <div class="row mt-3">
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="irritability" type="checkbox" value="1" id="id96">
+              <label class="form-check-label" for="id96">
+                irritability
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="muscle_pain" type="checkbox" value="1" id="id97">
+              <label class="form-check-label" for="id97">
+                muscle_pain
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="altered_sensorium" type="checkbox" value="1" id="id98">
+              <label class="form-check-label" for="id98">
+                altered_sensorium
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="red_spots_over_body" type="checkbox" value="1" id="id99">
+              <label class="form-check-label" for="id99">
+                red_spots_over_body
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="belly_pain" type="checkbox" value="1" id="id100">
+              <label class="form-check-label" for="id100">
+                belly_pain
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="abnormal_menstruation" type="checkbox" value="1" id="id101">
+              <label class="form-check-label" for="id101">
+                abnormal_menstruation
+              </label>
+            </div>
+          </div>
+
+        </div>
+        <!--17 row end here-->
+
+        <!--18 row start here-->
+        <div class="row mt-3">
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="dischromic_patches" type="checkbox" value="1" id="id102">
+              <label class="form-check-label" for="id102">
+                dischromic_patches
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="watering_from_eyes" type="checkbox" value="1" id="id103">
+              <label class="form-check-label" for="id103">
+                watering_from_eyes
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="increased_appetite" type="checkbox" value="1" id="id104">
+              <label class="form-check-label" for="id104">
+                increased_appetite
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="polyuria" type="checkbox" value="1" id="id105">
+              <label class="form-check-label" for="id105">
+                polyuria
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="family_history" type="checkbox" value="1" id="id106">
+              <label class="form-check-label" for="id106">
+                family_history
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="mucoid_sputum" type="checkbox" value="1" id="id107">
+              <label class="form-check-label" for="id107">
+                mucoid_sputum
+              </label>
+            </div>
+          </div>
+
+        </div>
+        <!--18 row end here-->
+
+        <!--19 row start here-->
+        <div class="row mt-3">
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="rusty_sputum" type="checkbox" value="1" id="id108">
+              <label class="form-check-label" for="id108">
+                rusty_sputum
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="lack_of_concentration" type="checkbox" value="1" id="id109">
+              <label class="form-check-label" for="id109">
+                lack_of_concentration
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="visual_disturbances" type="checkbox" value="1" id="id110">
+              <label class="form-check-label" for="id110">
+                visual_disturbances
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="receiving_blood_transfusion" type="checkbox" value="1" id="id111">
+              <label class="form-check-label" for="id111">
+                blood_transfusion
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="receiving_unsterile_injections" type="checkbox" value="1" id="id112">
+              <label class="form-check-label" for="id112">
+                unsterile_injections
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="coma" type="checkbox" value="1" id="id113">
+              <label class="form-check-label" for="id113">
+                coma
+              </label>
+            </div>
+          </div>
+
+        </div>
+        <!--19 row end here-->
+
+        <!--20 row start here-->
+        <div class="row mt-3">
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="stomach_bleeding" type="checkbox" value="1" id="id114">
+              <label class="form-check-label" for="id114">
+                stomach_bleeding
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="distention_of_abdomen" type="checkbox" value="1" id="id115">
+              <label class="form-check-label" for="id115">
+                distention_of_abdomen
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="history_of_alcohol_consumption" type="checkbox" value="1" id="id117">
+              <label class="form-check-label" for="id117">
+                alcohol_consumption
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="fluid_overload" type="checkbox" value="1" id="id118">
+              <label class="form-check-label" for="id118">
+                fluid_overload
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="blood_in_sputum" type="checkbox" value="1" id="id119">
+              <label class="form-check-label" for="id119">
+                blood_in_sputum
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="prominent_veins_on_calf" type="checkbox" value="1" id="id120">
+              <label class="form-check-label" for="id120">
+                prominent_veins_on_calf
+              </label>
+            </div>
+          </div>
+        </div>
+        <!--20 row end here-->
+
+
+        <!--21 row start here-->
+        <div class="row mt-3">
+
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="palpitations" type="checkbox" value="1" id="id121">
+              <label class="form-check-label" for="id121">
+                palpitations
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="painful_walking" type="checkbox" value="1" id="id122">
+              <label class="form-check-label" for="id122">
+                painful_walking
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="pus_filled_pimples" type="checkbox" value="1" id="id123">
+              <label class="form-check-label" for="id123">
+                pus_filled_pimples
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="blackheads" type="checkbox" value="1" id="id124">
+              <label class="form-check-label" for="id124">
+                blackheads
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="scurring" type="checkbox" value="1" id="id125">
+              <label class="form-check-label" for="id125">
+                scurring
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="skin_peeling" type="checkbox" value="1" id="id126">
+              <label class="form-check-label" for="id126">
+                skin_peeling
+              </label>
+            </div>
+          </div>
+        </div>
+        <!--21 row end here-->
+
+        <!--22 row start here-->
+        <div class="row mt-3">
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="silver_like_dusting" type="checkbox" value="1" id="id128">
+              <label class="form-check-label" for="id128">
+                silver_like_dusting
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="small_dents_in_nails" type="checkbox" value="1" id="id129">
+              <label class="form-check-label" for="id129">
+                small_dents_in_nails
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="inflammatory_nails" type="checkbox" value="1" id="id130">
+              <label class="form-check-label" for="id130">
+                inflammatory_nails
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="blister" type="checkbox" value="1" id="id131">
+              <label class="form-check-label" for="id131">
+                blister
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="red_sore_around_nose" type="checkbox" value="1" id="id132">
+              <label class="form-check-label" for="id132">
+                red_sore_around_nose
+              </label>
+            </div>
+          </div>
+          <div class="col-2">
+           <div class="form-check">
+            <input class="form-check-input px-2" name="yellow_crust_ooze" type="checkbox" value="1" id="id133">
+            <label class="form-check-label" for="id133">
+              yellow_crust_ooze
+            </label>
+          </div>
+        </div>
+        </div>
+        <!--22 row end here-->
+
+
+
+
+      </div>
+      <div class="container text-center" style="margin-bottom: 60px;">
+        <button type="submit" class="btn btn-outline-primary px-5 mt-5">Test</button>
+      </div>
+    </form>
+
+  </div>
+  
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

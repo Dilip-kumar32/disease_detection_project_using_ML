@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style >
+        .background-primary{
+                 background: #84ffff;
+                
+                 }
+        body{
+            background-image: url("{{ url_for('static', filename='image/slide4.jpg')}}");
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            background-size: cover;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Approve</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light background-primary">
+
+  <a class="navbar-brand" href="/index123"><img src="{{ url_for('static', filename='image/doctorlogo.png')}}" alt="" height="50px" width="100px">
+Admin Home</a>
+</nav>
+<marquee   scrollamount="15">
+    <h3 class="display-3 text-primary">Client Appointment List</h3>
+    </marquee>
+    <div class="container-fluid mt-2 ">
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+            <tr>
+                <th class="lead">Patient Name</th>
+                <th class="lead">Email Id</th>
+                <th class="lead">Doctor</th>
+                <th class="lead">Date</th>
+                <th class="lead">Message</th>
+                <th class="lead">Age</th>
+                <th class="lead">Appointment Time</th>
+                <th class="lead">Approve</th>
+                <th class="lead">Delete</th>
+            </tr>
+        </thead>
+        <tbody class="bg-info">
+             {% for row in book %} 
+            <tr>
+                <td class="lead text-white">{{row[1]}}</td>
+                <td class="lead text-white">{{row[2]}}</td>
+                <td class="lead text-white">{{row[3]}}</td>
+                <td class="lead text-white">{{row[4]}}</td>
+                <td class="lead text-white">{{row[5]}}</td>
+                <td class="lead text-white">{{row[6]}}</td>
+                <td class="lead text-white">{{row[7]}}</td>
+                <td><form action="{{ url_for('approveclient', id=row[0]) }}" method='post' id="form1"><input  type="submit" class="btn btn-outline-light" value="Approve"></form></td>
+                <td><form action="{{ url_for('deletee', id=row[0]) }}" method='post' id="form2"><input  type="submit" class="btn btn-outline-danger" value="Cancel"></form></td>
+            </tr>
+            {% endfor %} 
+        </tbody>
+        </table>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+      $("#form1").submit(function(){
+        swal("Form Approved Successfully!", "Good job", "success");
+      });
+      $("#form2").submit(function(){
+        swal("Successfully Delete!", " ", "success");
+      });
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

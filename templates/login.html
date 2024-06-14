@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="static/css/formstyle.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+<style>
+        h1 {text-align: center;}
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="header" style="background:#84ffff;">
+            <img src="static/image/doctorlogo.png" alt="" height="50px" width="100px">
+            <nav class="navbar">
+                <div style="display: flex;justify-content:space-around;">
+                    <div style="margin-right: 480px;;">
+                        <a href="/">home</a>
+                        <a href="/#services">services</a>     
+                        <a href="/#doctors">doctors</a>
+                        <a href="/#book">book</a>
+                        <a href="/#review">review</a>
+                        <a href="/#about">about</a>
+                    </div>
+
+                    <div>
+                        <a href="/login">Login</a>
+                        <a href="/registration">Signup</a>
+                    </div>
+                </div>
+            </nav>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </header>
+<br>
+<h1>{{la}}</h1><h1>{{err}}</h1>
+        <div class="loginform">
+<p class="heading">Login</p>
+            <form action="/login" method="post">
+
+                
+                <label for="">Email</label>
+                <input style="margin-left: 60px;" type="email" required name="user_name" placeholder="Enter your email">
+                <br>
+                <label for="">Password</label>
+                <input type="password" name="user_password" required placeholder="Enter password">
+                <br>
+                <p style="font-size: 15px;margin-left: 60%;">Click <a style="color: #16a085;" href="/registration">here</a> to Signup....</p>
+                <button class="button">Login</button>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

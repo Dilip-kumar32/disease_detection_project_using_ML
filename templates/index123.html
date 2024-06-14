@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Dashboard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-witdh, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="static/css/style2.css" />
+    <link type="text/css" rel="stylesheet" href="static/css/font-awesome.min.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+
+<body style="background-image: url('static/image/doctorappointment.jpg');background-repeat: no-repeat;background-attachment: fixed; background-size: cover;">
+    <section id="sidebar">
+        <div class="sidebar-brand">
+            <!-- <h2><i class="fa fa-desktop"></i> <span>Websblog</span></h2> -->
+            <img src="static/image/doctorlogo.png" alt="" height="75px" width="130px">
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li><a href="/home"><i class="fa fa-desktop"></i> <span>Home</span></a></li>
+                <li><a href="/doctor"><i class="fa-solid fa-user-doctor"></i> <span>Doctor</span></a></li>
+                <li><a href="/index12"><i class="fa-solid fa-pills"></i> <span>Medstore</span></a></li>
+
+            </ul>
+        </div>
+    </section>
+    
+    <Section id="main-content">
+        <div class="header">
+            
+            <h1 style="color: rgb(3, 11, 255); align-content: center;">
+                {{l}}
+            </h1>
+            <div class="header-left header-profile" id="header_left" style="text-align: right;">
+                <li><a href="#"><i class="fa fa-user"></i></a></li>
+                <li><a href="/login"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="clear"></div>
+        <div class="main-content-info container">
+            <div class="card">
+
+                <h2 class="fa-solid fa-users-line">Click below</h2>
+                <a href="/approve">New Appointment</a>
+            </div>
+            <div class="card">
+                <h2 class="fa-solid fa-person-circle-check">Click below</h2>
+                <a href="/approveappointment" >Approved Appointment</a>
+            </div>
+            <div class="card">
+                <h2 class="fa-solid fa-user-doctor">Click below</h2>
+                <a href="" data-toggle="modal" data-target="#exampleModal3">Add Doctors</a>
+            </div>
+            <div class="card">
+                <h2 class="fa-solid fa-pills"> Click below</h2>
+                <a href="" data-toggle="modal" data-target="#exampleModal4">Add Medicine</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+    </Section>
+
+
+
+    <!-- Modal start here-->
+
+    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="container text-center">
+                        <h5 class="modal-title" id="exampleModalLabel">Add Doctors</h5>
+                    </div>
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="/adddoctor" method="post" enctype="multipart/form-data" id="form2">
+                        <div class="form-group">
+                        <label >Name</label>
+                        <input type="text" class="form-control" name="doctor" placeholder="Enter Name" required>
+                      </div>
+                      <div class="form-group">
+                        <label >Specialization</label>
+                        <input type="text" class="form-control" name="specialist" placeholder="Enter Specialization" required>
+                      </div>
+                      <div class="form-group">
+                        <label >Degree</label>
+                        <input type="text" class="form-control" name="degree"  placeholder="Enter Degree" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" name="doctor_email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email" required>
+                      </div>
+                      <div class="form-group">
+                        <label >Location</label>
+                        <input type="text" class="form-control" name="address" placeholder="Enter Address" required>
+                      </div>
+                      <div class="form-group">
+                        <label >Password</label>
+                        <input type="password" class="form-control" name="doctor_password" placeholder="Enter Password" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlFile1">Please select image</label>
+                        <input type="file" class="form-control-file" name="file" id="exampleFormControlFile1" required>
+                      </div>
+                      <div class="modal-footer">
+                      <div class="container text-center">
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                      </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal end here-->
+
+    <!-- Modal start here-->
+
+    <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add Medicine</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="/addmedicine" method="post" enctype="multipart/form-data" id="form1">
+                        <div class="form-group">
+                        <label >Medicine name</label>
+                        <input type="text" class="form-control" name="medicine" placeholder="Enter medicine name" required>
+                      </div>
+                      <div class="form-group">
+                        <label >Disease name</label>
+                        <input type="text" class="form-control" name="disease" placeholder="Enter disease name" required>
+                      </div>
+                      <label>Price</label>
+                      <div class="input-group mb-2 mr-sm-2">
+                        <input type="text" class="form-control" id="inlineFormInputGroupUsername2" name="price" placeholder="Enter price" required>
+                        <div class="input-group-append">
+                          <div class="input-group-text">Rupees</div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlFile1">Please select image</label>
+                        <input type="file" class="form-control-file"name="file" id="exampleFormControlFile1" required>
+                      </div>
+                      <div class="modal-footer">
+                      <div class="container text-center">
+                        
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                      </div>
+                      
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal end here-->
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+      $("#form1").submit(function(){
+        swal("Form submit successfully!", "Good job", "success");
+      });
+      $("#form2").submit(function(){
+        swal("Form submit successfully!", "Good job", "success");
+      });
+    });
+    </script>
+
+    <script type=" text/javascript" src="static/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="static/js/external.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

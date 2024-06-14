@@ -1,0 +1,918 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Search page!</title>
+  <style>
+            .banner-background{
+                  height: 200px;
+                 }
+                 .background-primary{
+                 background-color:#84ffff;
+                 }
+        </style>
+</head>
+
+<body>
+
+<!-- navbar start here -->
+    <nav class="navbar navbar-expand-lg navbar-light background-primary">
+
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li><img src="static/image/doctorlogo.png" alt="" height="50px" width="100px"></li>
+      <li class="nav-item active">
+        <a class="nav-link " href="/home">Home</a>
+      </li>
+
+
+    </ul>
+
+  </div>
+</nav>
+<div class="divider py-1 bg-white"></div>
+
+<!-- navbar end here -->
+
+
+<div class="container-fluid  background-primary">
+
+            <div class="jumbotron banner-background">
+
+                <div class="container text-center">
+                    <h3 class="display-3 pt-5">Welcome to Health Checkup</h3>
+                    <p class="lead">Please check the symptoms box and test yourself</p>
+
+                </div>
+            </div>
+</div>
+<div class="container text-center">{{abc}}</div>
+<div class="container mt-5">
+    <form action="/test12" method="post">
+      <div class="form-group">
+        <div class="row mt-3">
+
+ 	{% for row in data %}
+<!--  check box 1 start here-->
+          <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name}}" type="checkbox" value="1">
+              <label class="form-check-label">
+                {{row.name}}
+              </label>
+            </div>
+          </div>
+            <!--  check box 1 end here-->
+
+            <!--  check box 2 start here-->
+          {%if row.name1:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name1}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name1}}
+              </label>
+            </div>
+          </div>
+           {%endif%}
+            <!--  check box 2 end here-->
+
+            <!--  check box 3 start here-->
+          {%if row.name2:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name2}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name2}}
+              </label>
+            </div>
+          </div>
+           {%endif%}
+            <!--  check box 3 end here-->
+
+            <!--  check box 4 start here-->
+          {%if row.name3:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name3}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name3}}
+              </label>
+            </div>
+          </div>
+           {%endif%}
+            <!--  check box 4 end here-->
+
+            <!--  check box 5 start here-->
+          {%if row.name4:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name4}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name4}}
+              </label>
+            </div>
+          </div>
+           {%endif%}
+            <!--  check box 5 end here-->
+
+            <!--  check box 6 start here-->
+          {%if row.name5:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name5}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name5}}
+              </label>
+            </div>
+          </div>
+           {%endif%}
+            <!--  check box 6 end here-->
+
+            <!--  check box 7 start here-->
+          {%if row.name6:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name6}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name6}}
+              </label>
+            </div>
+          </div>
+           {%endif%}
+            <!--  check box 7 end here-->
+
+            <!--  check box 8 start here-->
+          {%if row.name7:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name7}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name7}}
+              </label>
+            </div>
+          </div>
+           {%endif%}
+            <!--  check box 8 end here-->
+
+            <!--  check box 9 start here-->
+          {%if row.name8:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name8}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name8}}
+              </label>
+            </div>
+          </div>
+           {%endif%}
+            <!--  check box 9 end here-->
+
+            <!--  check box 10 start here-->
+            {%if row.name9:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name9}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name9}}
+              </label>
+            </div>
+          </div>
+             {%endif%}
+            <!--  check box 10 end here-->
+
+            <!--  check box 11 start here-->
+            {%if row.name10:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name10}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name10}}
+              </label>
+            </div>
+          </div>
+             {%endif%}
+            <!--  check box 11 end here-->
+
+            <!--  check box 12 start here-->
+            {%if row.name11:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name11}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name11}}
+              </label>
+            </div>
+          </div>
+             {%endif%}
+            <!--  check box 12 end here-->
+
+            <!--  check box 13 start here-->
+            {%if row.name12:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name12}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name12}}
+              </label>
+            </div>
+          </div>
+             {%endif%}
+            <!--  check box 13 end here-->
+
+            <!--  check box 14 start here-->
+            {%if row.name13:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name13}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name13}}
+              </label>
+            </div>
+          </div>
+             {%endif%}
+            <!--  check box 14 end here-->
+
+            <!--  check box 15 start here-->
+            {%if row.name14:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name14}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name14}}
+              </label>
+            </div>
+          </div>
+             {%endif%}
+            <!--  check box 15 end here-->
+
+            <!--  check box 16 start here-->
+            {%if row.name15:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name15}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name15}}
+              </label>
+            </div>
+          </div>
+             {%endif%}
+            <!--  check box 16 end here-->
+
+            <!--  check box 17 start here-->
+            {%if row.name16:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name16}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name16}}
+              </label>
+            </div>
+          </div>
+             {%endif%}
+            <!--  check box 17 end here-->
+
+            <!--  check box 18 start here-->
+            {%if row.name17:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name17}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name17}}
+              </label>
+            </div>
+          </div>
+             {%endif%}
+            <!--  check box 18 end here-->
+
+            <!--  check box 19 start here-->
+            {%if row.name18:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name18}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name19}}
+              </label>
+            </div>
+          </div>
+             {%endif%}
+            <!--  check box 19 end here-->
+
+            <!--  check box 20 start here-->
+            {%if row.name19:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name19}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name19}}
+              </label>
+            </div>
+          </div>
+             {%endif%}
+            <!--  check box 20 end here-->
+
+            <!--  check box 21 start here-->
+            {%if row.name20:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name20}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name20}}
+              </label>
+            </div>
+          </div>
+             {%endif%}
+            <!--  check box 21 end here-->
+
+            <!--  check box 22 start here-->
+            {%if row.name21:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name21}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name21}}
+              </label>
+            </div>
+          </div>
+             {%endif%}
+            <!--  check box 22 end here-->
+
+            <!--  check box 23 start here-->
+            {%if row.name22:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name22}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name22}}
+              </label>
+            </div>
+          </div>
+             {%endif%}
+            <!--  check box 23 end here-->
+
+            <!--  check box 24 start here-->
+            {%if row.name23:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name23}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name23}}
+              </label>
+            </div>
+          </div>
+             {%endif%}
+            <!--  check box 24 end here-->
+
+            <!--  check box 25 start here-->
+            {%if row.name24:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name24}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name24}}
+              </label>
+            </div>
+          </div>
+             {%endif%}
+            <!--  check box 25 end here-->
+
+            <!--  check box 26 start here-->
+            {%if row.name25:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name25}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name25}}
+              </label>
+            </div>
+          </div>
+             {%endif%}
+            <!--  check box 26 end here-->
+
+            <!--  check box 27 start here-->
+            {%if row.name26:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name26}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name26}}
+              </label>
+            </div>
+          </div>
+             {%endif%}
+            <!--  check box 27 end here-->
+
+            <!--  check box 28 start here-->
+            {%if row.name27:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name27}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name27}}
+              </label>
+            </div>
+          </div>
+             {%endif%}
+            <!--  check box 28 end here-->
+
+            <!--  check box 29 start here-->
+            {%if row.name28:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name28}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name28}}
+              </label>
+            </div>
+          </div>
+             {%endif%}
+            <!--  check box 29 end here-->
+
+            <!--  check box 30 start here-->
+            {%if row.name29:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name29}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name29}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 30 end here-->
+
+           <!--  check box 31 start here-->
+            {%if row.name30:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name30}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name30}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 31 end here-->
+
+            <!--  check box 32 start here-->
+            {%if row.name31:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name31}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name31}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 32 end here-->
+
+           <!--  check box 33 start here-->
+            {%if row.name32:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name32}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name32}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 33 end here-->
+
+           <!--  check box 34 start here-->
+            {%if row.name33:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name33}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name33}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 34 end here-->
+
+           <!--  check box 35 start here-->
+            {%if row.name34:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name34}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name34}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 35 end here-->
+
+
+           <!--  check box 36 start here-->
+            {%if row.name35:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name35}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name35}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 36 end here-->
+
+            <!--  check box 37 start here-->
+            {%if row.name36:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name36}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name36}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 37 end here-->
+
+           <!--  check box 38 start here-->
+            {%if row.name37:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name37}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name37}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 38 end here-->
+
+           <!--  check box 39 start here-->
+            {%if row.name38:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name38}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name38}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 39 end here-->
+
+           <!--  check box 40 start here-->
+            {%if row.name39:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name39}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name39}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 40 end here-->
+
+
+          <!--  check box 41 start here-->
+            {%if row.name40:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name40}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name40}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 41 end here-->
+
+            <!--  check box 42 start here-->
+            {%if row.name41:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name41}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name41}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 42 end here-->
+
+           <!--  check box 43 start here-->
+            {%if row.name42:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name42}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name42}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 43 end here-->
+
+           <!--  check box 44 start here-->
+            {%if row.name43:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name43}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name43}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 44 end here-->
+
+           <!--  check box 45 start here-->
+            {%if row.name44:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name44}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name44}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 45 end here-->
+
+
+          <!--  check box 46 start here-->
+            {%if row.name45:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name45}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name45}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 46 end here-->
+
+            <!--  check box 47 start here-->
+            {%if row.name46:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name46}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name46}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 47 end here-->
+
+           <!--  check box 48 start here-->
+            {%if row.name47:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name47}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name47}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 48 end here-->
+
+           <!--  check box 49 start here-->
+            {%if row.name48:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name48}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name48}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 49 end here-->
+
+           <!--  check box 50 start here-->
+            {%if row.name49:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name49}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name49}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 50 end here-->
+
+            <!--  check box 51 start here-->
+            {%if row.name50:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name50}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name50}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 51 end here-->
+
+            <!--  check box 52 start here-->
+            {%if row.name51:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name51}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name51}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 52 end here-->
+
+           <!--  check box 53 start here-->
+            {%if row.name52:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name52}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name52}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 53 end here-->
+
+           <!--  check box 54 start here-->
+            {%if row.name53:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name53}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name53}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 54 end here-->
+
+           <!--  check box 55 start here-->
+            {%if row.name54:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name54}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name54}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 55 end here-->
+
+            <!--  check box 56 start here-->
+            {%if row.name55:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name55}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name55}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 56 end here-->
+
+            <!--  check box 57 start here-->
+            {%if row.name56:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name56}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name56}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 57 end here-->
+
+           <!--  check box 58 start here-->
+            {%if row.name57:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name57}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name57}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 58 end here-->
+
+           <!--  check box 59 start here-->
+            {%if row.name58:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name58}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name58}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 59 end here-->
+
+           <!--  check box 60 start here-->
+            {%if row.name59:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name59}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name59}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 60 end here-->
+
+<!--  check box 61 start here-->
+            {%if row.name60:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name60}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name60}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 61 end here-->
+
+           <!--  check box 62 start here-->
+            {%if row.name61:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name61}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name61}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 62 end here-->
+
+           <!--  check box 63 start here-->
+            {%if row.name62:%}
+            <div class="col-2 mb-3">
+            <div class="form-check">
+              <input class="form-check-input px-2" name="{{row.name62}}" type="checkbox" value="1" >
+              <label class="form-check-label" >
+                {{row.name62}}
+              </label>
+            </div>
+          </div>
+            {%endif%}
+            <!--  check box 63 end here-->
+
+
+
+
+
+
+
+       {% endfor %}
+    </div>
+     <div class="container text-center" style="margin-bottom: 60px;">
+     <button type="submit" class="btn btn-outline-primary px-5 mt-5">Test</button>
+     </div>
+   </div>
+    </form>
+
+  </div>
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

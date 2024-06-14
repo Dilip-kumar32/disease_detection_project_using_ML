@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="static/css/formstyle.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <style>
+        h1 {text-align: center;}
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="header" style="background: #84ffff">
+            <img src="static/image/doctorlogo.png" alt="" height="50px" width="100px">
+            <nav class="navbar">
+                <div style="display: flex;justify-content:space-around;">
+                    <div style="margin-right: 500px;;">
+                        <a href="/">home</a>
+                        <a href="#">services</a>
+                        <a href="#">doctors</a>
+                        <a href="/#book">book</a>
+                        <a href="/#review">review</a>
+                        <a href="/#about">about</a>
+                    </div>
+
+                    <div>
+                        <a href="/login">Login</a>
+                        
+                    </div>
+                </div>
+            </nav>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </header>
+        <br>
+
+        <h1>{{dil}}</h1>
+
+
+
+        <div class="registrationform">
+            <form action="/registration" method="post" id="form1">
+                <p class="heading">Register</p>
+
+                <label for="">Name</label>
+                <input class="inpt" type="text" name="user_name" id="name" placeholder="Enter your name">
+                <p class="error" id="name_error"></p>
+                <br>
+
+                <label for="">Mobile</label>
+                <input class="inpt" type="text" name="user_mobile" id="mobile" placeholder="Enter your mobile Number">
+                <p class="error" id="mobile_error"></p>
+                <br>
+
+                <label for="">Email</label>
+                <input class="inpt" style="margin-left: 58px;" type="email" name="user_email" id="email"
+                    placeholder="Enter your Email Id">
+                <p class="error" id="email_error"></p>
+                <br>
+
+                <label for="">Password</label>
+                <input class="inpt" type="password" name="user_password" id="password" placeholder="Enter password">
+                <p style="font-size: 1.2em;color: black;margin-left: 18%;">
+                    <span>[ Password must Contain One Lower case, One Upper Case, One Digit, One Special Character (!@#$%&) ]</span>
+                </p>
+
+                <p class="error" id="password_error"></p>
+                <br>
+
+                <label for="">DOB</label>
+                <input class="inpt" style="margin-left: 70px;" type="date" name="dob" id="dob" placeholder="">
+                <p class="error" id="date_error"></p>
+
+                <!-- below code for putting placeholder in date input -->
+                <!-- <input style="margin-left: 70px;" placeholder="Enter Date of Birth" class="textbox-n" type="text" onfocus="(this.type='date')" id="date" /> -->
+                <br>
+
+                <label for="address">Address</label><br>
+                <textarea class="inpt" name="user_address" id="address" cols="60" rows="4"
+                    style="margin-left: 25%;border: 1px solid #16a085;border-radius: 4px;"></textarea>
+                <p class="error" id="address_error"></p>
+                <br>
+
+                <label for="gender">Gender</label>
+                <div class="gender" style="margin-top: 10px;margin-left: 170px;display: flex;">
+                    <div>
+                        <label for="">Male</label>
+                        <input type="radio" class="gender" name="gender" id="gender" value="male">
+                    </div>
+                    <div>
+                        <label for="">Female</label>
+                        <input type="radio" class="gender" name="gender" id="gender" value="female">
+                    </div>
+                </div>
+                <p class="error" id="gender_error"></p>
+
+
+
+                <button class="button" value="signup" id="signup" onclick="validate(event)">Sign Up</button>
+                <!-- <input type="submit" class="button" value="Sign Up" id="signup"> -->
+            </form>
+        </div>
+    </div>
+
+    <script src="static/validator.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+      $("#form1").submit(function(){
+        swal("Your Registered successfully!", "Good job", "success");
+      });
+      
+    });
+   </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>
+
+</html>

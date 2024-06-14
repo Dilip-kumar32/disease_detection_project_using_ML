@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Test yourself</title>
+    <style>
+            .banner-background{
+            clip-path: polygon(50% 0, 100% 0, 100% 43%, 100% 92%, 68% 100%, 34% 95%, 0 100%, 0% 43%, 0 0);
+                 }
+                 .background-primary{
+                 background: #84ffff;
+                 }
+        </style>
+  </head>
+  <body>
+
+
+    <!-- navbar start here -->
+    <nav class="navbar navbar-expand-lg navbar-light background-primary">
+
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link " href="/home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/medicine">Medicine</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link " href="/doctor">Doctor</a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+<div class="divider py-1 bg-white"></div>
+
+<!-- navbar end here -->
+
+
+<div class="container-fluid m-0 p-0 banner-background ">
+            <div class="jumbotron background-primary ">
+                <div class="container text-center">
+                    <h3 class="display-3">Welcome to Health Checkup</h3>
+
+                </div>
+            </div>
+        </div>
+        
+<!--  Breast cancer start here-->
+<div class="container text-center">
+  <u><h1>Breast Cancer</h1></u>
+  </div><br>
+<!-- table start here -->
+<div class="container ">
+  <form action="/test" method="post">
+    <table >
+
+         <div class="form-group">
+        <tr>
+          <td><input type="text" name="radius_mean" Required class="form-control text-center"  placeholder="radius_mean"/></td>
+          <td><input type="text" name="texture_mean" required class="form-control text-center"  placeholder="texture_mean"/></td>
+          <td><input type="text" name="perimeter_mean" required class="form-control text-center"  placeholder="perimeter_mean"/></td>
+          <td><input type="text" name="area_mean" required class="form-control text-center"  placeholder="area_mean"/></td>
+          <td><input type="text" name="smoothness_mean" required  class="form-control text-center"  placeholder="smoothness_mean"/></td>
+
+        </tr>
+        </div>
+        <div class="form-group">
+        <tr>
+          <td><input type="text" name="compactness_mean" required  class="form-control text-center"  placeholder="compactness_mean"/></td>
+          <td><input type="text" name="concavity_mean" required class="form-control text-center"  placeholder="concavity_mean"/></td>
+          <td><input type="text" name="concave_points_mean" required  class="form-control text-center"  placeholder="concave_points_mean"/></td>
+          <td><input type="text" name="symmetry_mean" required class="form-control text-center"  placeholder="symmetry_mean"/></td>
+          <td><input type="text" name="fractal_dimension_mean" required  class="form-control text-center"  placeholder="fractal_dimension_mean"/></td>
+
+        </tr>
+        </div>
+        <div class="form-group">
+          <tr>
+          <td><input type="text" name="radius_se" required class="form-control text-center"  placeholder="radius_se"/></td>
+          <td><input type="text" name="texture_se" required  class="form-control text-center"  placeholder="texture_se"/></td>
+          <td><input type="text" name="perimeter_se" required class="form-control text-center"  placeholder="perimeter_se"/></td>
+          <td><input type="text" name="area_se" required class="form-control text-center"  placeholder="area_se"/></td>
+          <td><input type="text" name="smoothness_se" required class="form-control text-center"  placeholder="smoothness_se"/></td>
+
+        </tr>
+        </div>
+        <div class="form-group">
+        <tr>
+          <td><input type="text" name="compactness_se" required class="form-control text-center"  placeholder="compactness_se"/></td>
+          <td><input type="text" name="concavity_se" required class="form-control text-center"  placeholder="concavity_se"/></td>
+          <td><input type="text" name="concave_points_se" required class="form-control text-center"  placeholder="concave_points_se"/></td>
+          <td><input type="text" name="symmetry_se" required class="form-control text-center"  placeholder="symmetry_se"/></td>
+          <td><input type="text" name="fractal_dimension_se" required class="form-control text-center"  placeholder="fractal_dimension_se"/></td>
+
+        </tr>
+        </div>
+        <div class="form-group">
+        <tr>
+          <td><input type="text" name="radius_worst" required class="form-control text-center"  placeholder="radius_worst"/></td>
+          <td><input type="text" name="texture_worst" required class="form-control text-center"  placeholder="texture_worst"/></td>
+          <td><input type="text" name="perimeter_worst" required  class="form-control text-center"  placeholder="perimeter_worst"/></td>
+          <td><input type="text" name="area_worst" required class="form-control text-center"  placeholder="area_worst"/></td>
+          <td><input type="text" name="smoothness_worst" required  class="form-control text-center "  placeholder="smoothness_worst"/></td>
+
+        </tr>
+        </div>
+        <div class="form-group ">
+        <tr>
+          <td><input type="text" name="compactness_worst" required  class="form-control text-center"  placeholder="compactness_worst"/></td>
+          <td><input type="text" name="concavity_worst" required class="form-control text-center"  placeholder="concavity_worst"/></td>
+          <td><input type="text" name="concave_points_worst" required class="form-control text-center"  placeholder="concave_points_worst"/></td>
+          <td><input type="text" name="symmetry_worst" required class="form-control text-center"  placeholder="symmetry_worst"/></td>
+          <td><input type="text" name="fractal_dimension_worst" required class="form-control text-center "  placeholder="fractal_dimension_worst"/></td>
+
+        </tr>
+        </div>
+
+    </table>
+    <div class="container text-center mt-2">
+      <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+
+   </form>
+</div>
+<br>
+
+
+    <div class="container text-center">
+    <h1>{{mm}}</h1>
+    </div>
+<br>
+            <!--  Breast cancer end here-->
+
+
+                                  <!-- Lung Cancer start here-->
+<br>
+<div class="container text-center">
+  <u><h1>Lung Cancer</h1></u>
+  </div><br>
+<!-- table start here -->
+<div class="container ">
+<div class="row justify-content-center">
+  <form action="/test12" method="post">
+    <table >
+
+         <div class="form-group">
+        <tr>
+          <td><input type="text" name="Age" Required class="form-control text-center"  placeholder="Age"/></td>
+          <td><input type="text" name="Smokes" required class="form-control text-center"  placeholder="Smokes"/></td>
+          <td><input type="text" name="AreaQ" required class="form-control text-center"  placeholder="AreaQ"/></td>
+          <td><input type="text" name="Alchol" required class="form-control text-center"  placeholder="Alchol"/></td>
+
+        </tr>
+        </div>
+        
+        </table>
+        <div class="container text-center mt-2">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+
+       </form>
+       </div>
+    </div>
+    <br>
+        
+        <div class="container text-center">
+        <h1>{{l}}</h1>
+        </div>
+        <br>
+        <br>
+        
+        <!-- Lung Cancer end here-->
+        
+        
+                                      <!-- Diabetes start here-->
+        <div class="container text-center">
+          <u><h1>Diabetes</h1></u>
+          </div><br>
+        <!-- table start here -->
+        <div class="container ">
+          <form action="/test123" method="post">
+            <table >
+
+                 <div class="form-group">
+                <tr>
+                  <td><input type="text" name="Pregnancies" Required class="form-control text-center"  placeholder="Pregnancies"/></td>
+                  <td><input type="text" name="Glucose" required class="form-control text-center"  placeholder="Glucose"/></td>
+                  <td><input type="text" name="BloodPressure" required class="form-control text-center"  placeholder="BloodPressure"/></td>
+                  <td><input type="text" name="SkinThickness" required class="form-control text-center"  placeholder="SkinThickness"/></td>
+                  <td><input type="text" name="Insulin" required class="form-control text-center"  placeholder="Insulin"/></td>
+                </tr>
+                </div>
+               
+                <div class="form-group">
+               <tr>
+                 <td><input type="text" name="BMI" Required class="form-control text-center"  placeholder="BMI"/></td>
+                 <td><input type="text" name="DiabetesPedigreeFunction" required class="form-control text-center"  placeholder="DiabetesPedigreeFunction"/></td>
+                 <td><input type="text" name="Age" required class="form-control text-center"  placeholder="Age"/></td>
+              </tr>
+              </div>
+             
+               
+               
+                
+                </table>
+                <div class="container text-center mt-2">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+
+               </form>
+               
+            </div>
+            <br>
+            <br>
+
+
+                <div class="container text-center">
+                <h1>{{d}}</h1>
+                </div>
+
+<!-- Diabetes start here-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
